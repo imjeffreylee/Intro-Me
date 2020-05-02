@@ -5,7 +5,7 @@ $.ajax({
     data: { user },
 });
 
-export const signup = (user) =>
+export const signUp = (user) =>
 $.ajax({
     method: "POST",
     url: "/api/users",
@@ -17,3 +17,15 @@ $.ajax({
     method: "DELETE",
     url: "/api/session",
 });
+
+export const fetchUser = (id) =>
+    $.ajax({
+        method: "GET",
+        url: `/api/users/${id}`,
+    });
+
+export const fetchUsers = () =>
+    $.ajax({
+        method: "GET",
+        url: "/api/users/",
+    });
