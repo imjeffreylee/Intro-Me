@@ -11,7 +11,17 @@ class MainLandingPage extends React.Component {
 
     render() {
         return (
-            <h1>Main Landing Page</h1>
+            <div className="landing-page-container">
+                <header className="landing-header">
+                    <h1>Intro-Me</h1>
+                    <a href="#">Account</a>
+                </header>
+                <div className="content-container">
+                    <aside className="friend-list"></aside>
+                    <section className="message-board"></section>
+                    <aside className="job-list"></aside>
+                </div>
+            </div>
         )
     }
 }
