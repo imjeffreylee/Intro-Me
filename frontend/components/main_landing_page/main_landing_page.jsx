@@ -13,7 +13,7 @@ class MainLandingPage extends React.Component {
         return (
             <div className="landing-page-container">
                 <header className="landing-header">
-                    <h1>Intro-Me</h1>
+                    <h1 className="landing-h1">Intro-Me</h1>
                     <a href="#">Account</a>
                 </header>
                 <div className="content-container">
