@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import Greeting from "./greeting";
+import MainLandingPage from "./main_landing_page";
 
 const msp = ({ session, entities: { users } }) => {
     return {
@@ -7,4 +7,4 @@ const msp = ({ session, entities: { users } }) => {
     };
 };
 
-export default connect(msp)(Greeting);
+export default connect(msp)(MainLandingPage);

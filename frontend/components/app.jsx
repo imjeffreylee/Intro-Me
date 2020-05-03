@@ -1,10 +1,9 @@
 import React from "react";
-import GreetingContainer from "./greeting/greeting_container";
+import MainLandingPageContainer from "./main_landing_page/main_landing_page_container";
 
 const App = () => (
     <div>
-        <h1>Intro-Me</h1>
-        <GreetingContainer />
+        <MainLandingPageContainer />
     </div>
 );
 
