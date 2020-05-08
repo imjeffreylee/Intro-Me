@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>IntroMe</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <head>
+        <title>IntroMe</title>
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-  </head>
+        <%= stylesheet_link_tag    'application', media: 'all' %>
+        <%= javascript_include_tag 'application' %>
+        <script type="text/javascript">
+            window.friendlist_image = "<%= image_url('friendlist-img.jpg') %>"
+            window.amz_logo = "<%= image_url('amz_logo.png') %>"
+            window.apple_logo = "<%= image_url('apple_logo.png') %>"
+            window.fb_logo = "<%= image_url('fb_logo.png') %>"
+            window.google_logo = "<%= image_url('google_logo.png') %>"
+            window.nf_logo = "<%= image_url('nf_logo.jpg') %>"
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    </head>
 
-  <body>
-    <%= yield %>
-  </body>
+    <body>
+        <%= yield %>
+    </body>
 </html>

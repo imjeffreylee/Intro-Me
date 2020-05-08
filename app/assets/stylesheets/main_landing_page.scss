@@ -1,9 +1,122 @@
 .landing-page-container {
-    width: 90%;
-    background: #000000;
-    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    
 }
 
 .landing-h1 {
-    color: red;
+    color: rgb(166, 166, 166);
+    font-family: 'Jost', sans-serif;
+    font-size: 80px;
+}
+
+.landing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 20px;
+}
+
+.landing-header a, .msg-buttons a, .msg-reply a {
+    color: white;
+    background-color: rgb(32, 56, 99);
+    border: 1px solid rgb(32, 56, 99);
+    padding: 10px;
+    font-family: 'Jost', sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.landing-header a:hover, .msg-buttons a:hover, .msg-reply a:hover {
+    color: rgb(32, 56, 99);
+    background-color: #ffffff;
+    border: 1px solid rgb(32, 56, 99);
+}
+
+.msg-buttons a {
+    margin: 0 3px;
+}
+
+.content-container {
+    height: 900px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.friend-list, .message-board, .job-list {
+    width: 19%;
+    height: 500px;
+    border: 1px solid black;
+    background: rgb(217, 217, 217);
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.message-board {
+    width: 59%;
+}
+
+.job-list {
+    width: 19%;
+}
+
+.friend-list h3, .message-board h3, .job-list h3 {
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.friendlist-img-container, .joblist-logo-container {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid lightgray;
+}
+
+.friendlist-img, .joblist-logo {
+    height: 40px;
+    width: auto;
+    max-width: 40px;
+}
+
+.friends > li, .jobs > li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.msg-block {
+    border: 1px solid black;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: rgb(242, 242, 242);
+}
+
+.msg-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.msg-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.msg-reply {
+    display: flex;
+    justify-content: flex-end;
 }
