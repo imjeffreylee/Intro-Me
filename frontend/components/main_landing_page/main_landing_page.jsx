@@ -12,10 +12,6 @@ class MainLandingPage extends React.Component {
     render() {
         return (
             <div className="landing-page-container">
-                <header className="landing-header">
-                    <h1 className="landing-h1">Intro-Me</h1>
-                    <a href="#">ACCOUNT</a>
-                </header>
                 <div className="content-container">
                     <aside className="friend-list">
                         <h3>Friends</h3>
