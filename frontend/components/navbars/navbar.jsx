@@ -21,7 +21,7 @@ class Navbar extends React.Component {
 
         if (!this.props.user) {
             button = (
-                <a href="#">LOG IN</a>
+                <Link to="/login">LOGIN</Link>
             )
         }
 

@@ -46,7 +46,6 @@
 }
 
 .friend-list, .message-board, .job-list {
-    width: 19%;
     height: 500px;
     border: 1px solid black;
     background: rgb(217, 217, 217);
@@ -58,7 +57,7 @@
     width: 59%;
 }
 
-.job-list {
+.job-list, .friend-list {
     width: 19%;
 }
 

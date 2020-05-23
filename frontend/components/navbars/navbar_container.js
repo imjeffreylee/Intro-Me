@@ -1,8 +1,8 @@
 import { connect } from "react-redux";
-import { logout } from "../../actions/session_actions";
+import { logout, fetchUser } from "../../actions/session_actions";
 import Navbar from "./navbar";
 
-const msp = (state, ownProps) => {
+const msp = (state) => {
     let userId = state.session.id;
     let user = state.entities.users[userId];
     return {
@@ -13,6 +13,7 @@ const msp = (state, ownProps) => {
 const mdp = (dispatch) => {
     return {
         logout: () => dispatch(logout()),
+        fetchUser: (id) => dispatch(fetchUser(id)),
     };
 };
 
