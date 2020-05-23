@@ -1,0 +1,36 @@
+.landing-h1 {
+    color: rgb(166, 166, 166);
+    font-family: 'Jost', sans-serif;
+    font-size: 80px;
+}
+
+.landing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.navbar-btn {
+    color: white;
+    background-color: rgb(32, 56, 99);
+    border: 1px solid rgb(32, 56, 99);
+    padding: 10px;
+    font-family: 'Jost', sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    margin: 0 3px;
+}
+
+.navbar-btn:hover {
+    color: rgb(32, 56, 99);
+    background-color: #ffffff;
+    border: 1px solid rgb(32, 56, 99);
+}
+
+.landing-h1:hover {
+    color: rgb(32, 56, 99);
+}

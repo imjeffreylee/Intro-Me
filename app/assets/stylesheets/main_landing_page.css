@@ -3,22 +3,7 @@
     margin: 0 auto;
 }
 
-.landing-h1 {
-    color: rgb(166, 166, 166);
-    font-family: 'Jost', sans-serif;
-    font-size: 80px;
-}
-
-.landing-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-.landing-header a, .msg-buttons a, .msg-reply a {
+.msg-buttons a, .msg-reply a {
     color: white;
     background-color: rgb(32, 56, 99);
     border: 1px solid rgb(32, 56, 99);
@@ -29,13 +14,13 @@
     box-sizing: border-box;
 }
 
-.landing-header a:hover, .msg-buttons a:hover, .msg-reply a:hover {
+.msg-buttons a:hover, .msg-reply a:hover {
     color: rgb(32, 56, 99);
     background-color: #ffffff;
     border: 1px solid rgb(32, 56, 99);
 }
 
-.msg-buttons a, .account-logout-btn a {
+.msg-buttons a {
     margin: 0 3px;
 }
 

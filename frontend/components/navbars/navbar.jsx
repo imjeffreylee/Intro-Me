@@ -13,21 +13,21 @@ class Navbar extends React.Component {
 
     render() {
         let button = (
-            <div className="account-logout-btn">
-                <a href="#" className="account-btn">ACCOUNT</a>
-                <a href="#" className="logout-btn">LOG OUT</a>
+            <div>
+                <a href="#" className="account-btn navbar-btn">ACCOUNT</a>
+                <a href="#" className="logout-btn navbar-btn">LOG OUT</a>
             </div>
         );
 
         if (!this.props.user) {
             button = (
-                <Link to="/login">LOGIN</Link>
+                <Link to="/login" className="navbar-btn">LOGIN</Link>
             )
         }
-        debugger
+        
         return (
             <header className="landing-header">
-                <h1 className="landing-h1">Intro-Me</h1>
+                <Link to="/" className="landing-h1">Intro-Me</Link>
                 {button}
             </header>
         )
