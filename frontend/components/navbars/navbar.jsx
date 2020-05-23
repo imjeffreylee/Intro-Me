@@ -12,10 +12,23 @@ class Navbar extends React.Component {
     }
 
     render() {
+        let button = (
+            <div className="account-logout-btn">
+                <a href="#" className="account-btn">ACCOUNT</a>
+                <a href="#" className="logout-btn">LOG OUT</a>
+            </div>
+        );
+
+        if (!this.props.user) {
+            button = (
+                <a href="#">LOG IN</a>
+            )
+        }
+
         return (
             <header className="landing-header">
                 <h1 className="landing-h1">Intro-Me</h1>
-                <a href="#">ACCOUNT</a>
+                {button}
             </header>
         )
     }
