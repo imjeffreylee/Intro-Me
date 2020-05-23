@@ -24,7 +24,7 @@ class Navbar extends React.Component {
                 <Link to="/login">LOGIN</Link>
             )
         }
-
+        debugger
         return (
             <header className="landing-header">
                 <h1 className="landing-h1">Intro-Me</h1>

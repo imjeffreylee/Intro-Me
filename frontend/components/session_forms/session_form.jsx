@@ -8,6 +8,11 @@ class SessionForm extends React.Component {
         this.state = {
             email: "",
             password: "",
+            first_name: "",
+            last_name: "",
+            status: "",
+            industry: "",
+            role: "",
         }
     }
 
@@ -40,37 +45,93 @@ class SessionForm extends React.Component {
     }
 
     render() {
-        let formHeader;
+        let sessionForm;
         let formSwitcher;
         if (this.props.formType === "login") {
-            formHeader = (
-                <h2>LOGIN</h2>
+            sessionForm = (
+                <div className="login-form">
+                    <h2>LOGIN</h2>
+                    <input
+                        type="text"
+                        placeholder="Email"
+                        value={this.state.email}
+                        onChange={this.update("email")}
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={this.state.password}
+                        onChange={this.update("password")}
+                    />
+                    <input type="submit" value="GO!" />
+                </div>
             )
             formSwitcher = (
                 <div>
                     <p>Not with us yet?</p>
-                    <Link to="/signup">SIGN UP</Link>
+                    <Link to="/signup" onClick={this.props.clearErrors}>SIGN UP</Link>
                 </div>
             )
         } else {
-            formHeader = (
-                <h2>SIGN UP</h2>
+            sessionForm = (
+                <div className="signup-form">
+                    <h2>SIGN UP</h2>
+                    <input
+                        type="text"
+                        placeholder="Email"
+                        value={this.state.email}
+                        onChange={this.update("email")}
+                    />
+                    <input
+                        type="text"
+                        placeholder="First name"
+                        value={this.state.first_name}
+                        onChange={this.update("first_name")}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Last name"
+                        value={this.state.last_name}
+                        onChange={this.update("last_name")}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Status"
+                        value={this.state.status}
+                        onChange={this.update("status")}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Industry"
+                        value={this.state.industry}
+                        onChange={this.update("industry")}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Role"
+                        value={this.state.role}
+                        onChange={this.update("role")}
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={this.state.password}
+                        onChange={this.update("password")}
+                    />
+                    <input type="submit" value="GO!" />
+                </div>
             )
             formSwitcher = (
-                <>
+                <div>
                     <p>Already have an account?</p>
-                    <Link to="/login">LOGIN</Link>
-                </>
+                    <Link to="/login" onClick={this.props.clearErrors}>LOGIN</Link>
+                </div>
             )
         }
 
         return (
             <div className="login-form-container">
-                <form onSubmit={this.handleSubmit}>
-                    {formHeader}
-                    <input type="text" placeholder="Email"/>
-                    <input type="password" placeholder="Password"/>
-                </form>
+                <form onSubmit={this.handleSubmit}>{sessionForm}</form>
                 {formSwitcher}
             </div>
         )
