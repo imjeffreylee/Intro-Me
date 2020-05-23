@@ -24,7 +24,6 @@ const Protected = ({ component: Component, path, loggedIn, exact }) => {
     )
 }
 
-
 const msp = state => {
     return {
         loggedIn: Boolean(state.session.id),
