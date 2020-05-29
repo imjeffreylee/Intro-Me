@@ -14,8 +14,8 @@ class Navbar extends React.Component {
     render() {
         let button = (
             <div>
-                <a href="#" className="account-btn navbar-btn">ACCOUNT</a>
-                <a href="#" className="logout-btn navbar-btn">LOG OUT</a>
+                <a href="#" className="navbar-btn">ACCOUNT</a>
+                <a onClick={this.logOut} className="navbar-btn">LOG OUT</a>
             </div>
         );
 
